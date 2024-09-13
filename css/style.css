@@ -28,7 +28,7 @@ body{
 }
 
 .container{
-    max-width: 1290px;
+    max-width: 1314px;
     margin: auto;
     padding: 0 1rem;
 }
@@ -106,10 +106,25 @@ nav a{ font: italic 18px var(--fp); color: inherit; padding: 0 10px;}
 .returns::after{ content: ''; position: absolute; top: 0; bottom: 0; left:100%; border: 50px solid; border-color: transparent #fff transparent transparent; z-index: 1; transform: translateX(-100%); }
 
 
+.wrap-5{ padding: 65px 0;}
+.h2{ font: bold italic 30px var(--fp); text-align: center; position: relative;}
+.h2::before{ content: ''; position: absolute; top: 50%; height: 1px; left: 0; right: 0; background: #eaeaea; transform: translateY(-50%); }
+.h2 span{ position: relative; background: #fff; padding: 0 170px; }
+.h2 span::before{ content: ''; position: absolute; left: 60px; top: 50%; transform: translateY(-50%) rotate(45deg); display: block; width: 20px; height: 20px; background: #d9bf8f;}
+.h2 span::after{ content: ''; position: absolute; right: 60px; top: 50%; transform: translateY(-50%) rotate(45deg); display: block; width: 20px; height: 20px; background: #d9bf8f;}
+.p-small{ margin: 15px 0; position: relative; }
+.p-big{ margin: 15px -12px; position: relative; }
+.over{ display: none; position: absolute; inset: 0; text-align: center;}
+.over .plus{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #f09d66; font-size: 60px;}
+.over a{ width: 110px; line-height: 42px; background: #f09d66; color: #fff; display: inline-block; position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%);}
+:is(.p-small,.p-big):hover .over{ display: block; cursor: pointer;}
+/* :is(.p-small,.p-big) img{ width: 100%;} */
+
+
 
 /* responsive */
 
-@media screen and (max-width:1310px){
+@media screen and (max-width:1334px){
 
 }
 
@@ -153,7 +168,9 @@ nav a{ font: italic 18px var(--fp); color: inherit; padding: 0 10px;}
     .wrap-1 li{ padding: 0 8px; }
     nav,.social{ display: none;}
     .wrap-3{ background-size: 150%;}
-    
+    .h2 span{ padding: 0 60px;}
+    .h2 span::before{ left: 0;}
+    .h2 span::after{ right: 0;}
 
 }
 
