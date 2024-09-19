@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shophia</title>
     <link rel="icon" href="img/sandra.webp">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
+<img src="img/loader.svg" alt="loading" class="loader">
+<div class="content">
     <div class="wrap-1">
         <div class="container">
             <div class="row">
@@ -30,7 +32,7 @@
         <div class="container">
             <div class="row align-center">
                 <div class="col-4">
-                    <button class="menu" aria-label="Menu"><span></span><span></span><span></span></button>
+                    <button class="menu" aria-label="Menu"><span class="fa fa-ellipsis-v"></span></button>
                     <nav>
                         <ul class="flex">
                             <li><a href="">Home</a></li>
@@ -382,6 +384,12 @@
             <div class="tar"><button class="top"><span class="fa fa-chevron-up"></span></button></div>
         </div>
     </footer>
-    
+</div>  
+<script>
+    window.addEventListener("load",function(){
+        document.querySelector(".content").style="display:block";
+        document.querySelector(".loader").style="display:none";
+    });
+</script>  
 </body>
 </html>
