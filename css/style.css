@@ -58,7 +58,6 @@ body{
 .img-resp{ max-width: 100%; height: auto;}
 .float-left{ float: left;}
 .float-right{ float: right;}
-.review::after{ content: ''; display: block; clear: both;}
 
 
 
@@ -74,6 +73,8 @@ h1 a{ color: inherit;}
 nav li{ margin: 0 4px;}
 nav a{ font: italic 18px var(--fp); color: inherit; padding: 0 10px;}
 .currency{ background: #000; color: #fff; border: none; width: 90px; height: 35px; padding: 10px; margin-left: 47px; }
+.menu{ background: #000; color: #fff; border: none; width: 90px; height: 35px; display: none;}
+.menu span{ display: block; height: 2px; background: #fff; margin: 6px 12px;}
 .social li{  margin: 0 6px;}
 .social a{ display: block; color: #d9bf8f; width: 34px; line-height: 30px; border: 2px solid; text-align: center; border-radius: 50%;}
 
@@ -224,7 +225,10 @@ nav a{ font: italic 18px var(--fp); color: inherit; padding: 0 10px;}
     .h2 span{ padding: 0 25px;}
     .h2 span::before{ left: 0;}
     .h2 span::after{ right: 0;}
-
+    .review-b::before{ width: 320px; }
+    .review{ flex-flow: column; }
+    .text-right div:last-child{  order: -1; }
+    .menu{ display: inline-block;}
 }
 
 @media screen and (max-width:359px){
